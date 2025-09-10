@@ -32,32 +32,81 @@
 	}
 
 	.table-style1 {
-	width: 80%;
-	margin: 20px auto;
-	border: 2px solid navy;
+		width: 80%;
+		margin: 20px auto;
+		border: 2px solid navy;
 	}
 	
 	.table-style1 th, .table-style1 td {
-	border: 1px solid navy;
-	padding: 10px;
-	text-align: center;
+		border: 1px solid navy;
+		padding: 10px;
+		text-align: center;
 	}
 
 	.table-style1 th {
-	background-color: lightblue;
+		background-color: lightblue;
+	}
+
+	.table-style2 {
+		width: 60%;
+		margin: 20px auto;
+		border-collapes: collapse;
+		border: 2px solid darkgreen;
+	}
+
+	.table-style2 th, .table-style2 td {
+		border: 1px solid darkgreen;
+		padding: 10px;
+		text-align: center;
+	}
+	
+		.table-style2 {
+		background-color: lightgreen;
+	}
+
+	.about 		{
+		width: 60%;
+		margin: 20px auto;
+		text-align: left;
+	}
+
+	div.mycontainer {
+		width:66%;
+		overflow:auto; /*browser will add scrollbars only when neccessary*/
+
+	}
+	div.mycontainer div {
+		width:50%;
+		float:left; /*makes an element float to the left side of the container*/
+	}	
+
+	.video	{
+		width:45%;
+		margin: 10px auto;
+		text-align: center;
+		border: 3px solid green;
+	}
+
+	.list-style1 {
+		list-style-type: square;
+		color: darkblue;
+		text-align: left;
+		margin: 20px;
+	}
+
+	.list-style2	{
+		list-style-type: circle;
+		color: darkgreen;
+		text-align: left;
+		margin: 20px;
 	}
 
 
+		
+				</style>
+  
 
-
-
-
-
-
-
-
-	</style>
-  </head>
+</head>
   <body>
     <header>
       <h1>Welcome to My Personal Webpage</h1>
@@ -69,33 +118,38 @@ Location: Kansas City
 </pre>	
       </p>
 	</header>
-<section>
+
+<section class="about">
 <p>Check out my favorite website: 
 <a href="https://www.tvtropes.org/"target="_blank">TV Tropes, the All-Devouring Pop Culture Wiki</a>
 </p>
 <a href="mailto:dustinpostlewait1980@gmail.com"target="blank">dustinpostlewait1980@gmail.com</a>
 
 <a href="https://en.wikipedia.org/wiki/Pit_bull"target=_blank">
-<img src="https://raw.githubusercontent.com/DDPost/DustinGoodwill/refs/heads/main/pit-bull.avif" alt="sample image"></a>
+<img src="https://raw.githubusercontent.com/DDPost/DustinGoodwill/refs/heads/main/pit-bull.avif" alt="sample image" title = "Find out more about this bestest boy!"></a>
 </section>
+
 <hr>
 <h2> My Hobbies </h2>
-<table>
+
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>Hours/week</th>
 </tr>
 <tr>
 <td>Reading</td>
-<td>4<td/
+<td>4</td>
 </tr>
 <tr>
 <td>Videogames</td>
 <td>5</td>
 </tr>
 </table>
+
 <h2>My Favorite Movies</h2>
-<table>
+
+<table class="table-style2">
 <tr>
 <th>Movie</th>
 <th>Star</th>
@@ -108,27 +162,39 @@ Location: Kansas City
 <td>Tom Hardy</td>
 </tr>
 </table>
-<h2>My Favorite Foods</h2
-<ul>
+
+<div class = "mycontainer">
+<div>
+<h2>My Favorite Foods</h2>
+<ul class="list-style1">
 <li>Mexican Lasagna</li>
-<li>Spaghetti Bolognase</ideo widli>
+<li>Spaghetti Bolognase</li>
 <li>Jalfreza</li>
 </ul>
-<h2>My Favorite Drinks</h2
-<ul>
+</div>
+<div>
+<h2>My Favorite Drinks</h2>
+<ul class="list-style2">
 <li>Monster</li>
 <li>GOOD Scotch</li>
 <li>Mountain Dew</li>
 </ul>
-<section>
+</div>
+</div>
+
+
+<section class = "video">
+
 <h2>My Favorite Videos</h2>
 <video width="528" height="396" controls>
 <source src="https://github.com/DDPost/DustinGoodwill/blob/main/Cats%20Video.mp4?raw=True">
 Your browser does not support the video tag.
 </video>
 </section>
+
 <h2>Embedded Video</h2>
-<iframe width="315" height="560" src="https://www.youtube.com/embed/1wrfr9uKhII"></iframe>
+<iframe <iframe width="315" height="560" src="https://www.youtube.com/embed/7u4-FtZfyfk"</iframe>
+
 </body>
 </html>
 
