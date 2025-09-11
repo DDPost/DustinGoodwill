@@ -3,6 +3,17 @@
   <head>
     <title>My Personal Webpage</title>
 	<style>
+	.button-transition {
+		background-color: navy;
+		color: white;
+		padding: 10px 20px;
+		transition: background-color 0.3 ease;
+		border: none;
+		cursor: pointer;
+	}
+	.button-transition:hover{
+		background-color: darkorange;
+	}
 	body {
 	background-color: powderblue;
 	font-family: Arial;
@@ -117,7 +128,7 @@ Age: 44
 Location: Kansas City
 </pre>	
 		<a href= "test.html" style = "color:black"; target = "_blank";>
-			<button>New Page Link</button></a>
+			<button class="button-transistion">New Page Link</button></a>
       </p>
 	</header>
 
