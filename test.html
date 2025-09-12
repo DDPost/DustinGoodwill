@@ -5,9 +5,88 @@
       body {
         background-image: linear-gradient(to bottom, cornflowerblue 0%, cornsilk 25%, lightcyan 50%, silver 75%, white 100%);
         min-height: 100vh;
+
+	.flex-container {
+		display:flex;
+		justify-content: space-around;
+		background-color: green;
+		padding: 20px;
+	}
+	.flex-item {
+		background-color: steelblue;
+		color: white;
+		padding: 20px;
+		width: 25%;
+		text-align: center;
+	
+	}
+        
+	
       }
+
+	.button-transition {
+		background-color: navy;
+		color: white;
+		padding: 10px 20px;
+		transition: background-color 0.3 ease;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.button-transition:hover{
+		background-color: darkorange;
+	}
+
     </style>
   </head>
-  </body>
+
+<header>
+      <h1>SIGN UP OR LOGIN
+      
+	</header>
+
+
+	
+
+ </body>
+	<p>Interested in joining us? Use this form to access our website. Or, if you already have an account, please login.
+	
+
+      </p>
+	<form style="margin-top: 30px;">
+        <label for="email">Enter your email:</label>
+	<input type="email" id="email" name="email" placeholder="you@example.com" required>
+	<br>
+	<br>
+	<label for="bio">Tell us about yourself:</label>
+	<br>
+	<textarea id="bio" name="bio" rows="4" cols="40"></textarea>
+	<br>
+	<br>
+	<input type="submit" value="Submit">
+	</form>
+
+	<form
+		<label for="user">Username:</label>
+		<input type="text" id="user" name="user" placeholder= "Enter your username" required>
+		<br><br>
+		<label for="pass">Password:</label>
+		<input type="password"id="pass" name="pass" placeholder="Enter your password" required>
+		<br><br>
+		<input type= "submit" value="Login">
+	</form>
+
+	<div class="flex-container">
+	<div class="flex-item"><a href= "https://www.facebook.com" style = "color:black"; target = "_blank";>
+			<button class="button-transition">Facebook</button></a>
+ </div>
+	<div class="flex-item"><a href= "https://www.TikTok.com" style = "color:black"; target = "_blank";>
+			<button class="button-transition">TikTok</button></a>
+ </div>
+	<div class="flex-item"><a href= "https:www.Instagram.com" style = "color:black"; target = "_blank";>
+			<button class="button-transition">Instagram</button></a>
+</div>
+</div>
+
   <p>This is a new page.</p>
 </html>
